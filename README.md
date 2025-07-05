@@ -1,28 +1,41 @@
 <!-- A Propos -->
 ## A Propos du Projet
 
-Numéro de projet : 01
-But du projet : Construire une simple ToDo App tout en découvrant de nouveaux frameworks :
-__NextJS, Prisma, tailwind css__
+**Projet n°01 — ToDo App**
 
-Ce ReadMe ainsi que le projet est ammené à évoluer dans le temps.
+L’objectif de ce projet est de construire une application de type *ToDo List* simple et fonctionnelle, dans une démarche d'apprentissage et d'exploration de nouvelles technologies.
+
+Ce projet me permet de découvrir et de pratiquer les outils suivants :
+- **Next.js**
+- **Tailwind CSS**
+- **Prisma ORM**
+
+Ce dépôt est évolutif : le code, l'organisation et même ce README seront amenés à évoluer au fil de l'avancement de ce projet.
+
 
 ***
 <!-- Pourquoi ce projet -->
 ## Pourquoi ce projet ?
 
-Ce projet entre dans le cadre de ma montée en compétences, je souhaite améliorer mes bases et mon appétences à différents environnements de développement afin de consolider mes bases et me préparer au mieux à la suite de mes études.
-Cela me permet de prendre un nouveau départ, travailler sur des projets de niveau 0 avec les connaissances que j'ai aujourd'hui.
-C'est le premier d'une longue série que j'espère faire évoluer dans le temps.
+Ce projet s'inscrit dans une démarche de montée en compétences. Il me permet de consolider mes bases en développement web tout en explorant de nouveaux outils et frameworks modernes.
+
+Plutôt que de reprendre des projets trop ambitieux ou mal structurés réalisés dans le passé, j’ai choisi de repartir de zéro, avec mes connaissances actuelles, et de bâtir des projets simples mais solides, étape par étape.
+
+Cette ToDo App marque le début d’une série de projets d’apprentissage. L’idée est de progresser à mon rythme, de prendre confiance, et de démontrer que le syndrome de l’imposteur ne doit pas freiner l’envie de créer.
 
 
 ***
 <!-- Liste des Tech -->
-### Liste des Tech'
+## Technologies utilisées
 
-Cette section rassemble toutes les technos touchées dans le cadre de ce projet :
+Cette partie liste les différentes techno utilisées dans le cadre de ce projet :
 
-* [![Next][Next.js]][Next-url]
+- [**Next.js**](https://nextjs.org/) — Framework React full-stack (avec App Router)
+- [**Tailwind CSS**](https://tailwindcss.com/) — Framework CSS utilitaire pour une mise en page rapide et responsive
+- [**Prisma**](https://www.prisma.io/) — ORM moderne pour Node.js, connecté ici à une base de données MySQL
+- [**TypeScript**](https://www.typescriptlang.org/) — Superset typé de JavaScript
+- [**ESLint**](https://eslint.org/) — Linting du code pour maintenir une bonne qualité
+- [**WampServer**](https://www.wampserver.com/) — Environnement local pour la base de données MySQL (dans ce cas précis)
 
 ***
 <!-- Conception -->
