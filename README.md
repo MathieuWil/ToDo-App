@@ -32,6 +32,7 @@ Cette partie liste les différentes techno utilisées dans le cadre de ce projet
 
 - [**Next.js**](https://nextjs.org/) — Framework React full-stack (avec App Router)
 - [**Tailwind CSS**](https://tailwindcss.com/) — Framework CSS utilitaire pour une mise en page rapide et responsive
+- [**Lucide**](https://lucide.dev/) — Permet d'utiliser de nouvelles icones
 - [**Prisma**](https://www.prisma.io/) — ORM moderne pour Node.js, connecté ici à une base de données MySQL
 - [**TypeScript**](https://www.typescriptlang.org/) — Superset typé de JavaScript
 - [**ESLint**](https://eslint.org/) — Linting du code pour maintenir une bonne qualité
@@ -57,7 +58,7 @@ Voici les prérequis au bon fonctionnement de notre application :
 
 Cette partie retrace les commandes utilisées pour initialiser notre projet :
 
-1. Exécuter le fichier db.sql afin de mettre en place notre BDD
+1. Créer la bdd 'todo'
 
 2. Depuis l'endroit ou l'on souhaite créer notre projet sur notre terminal vscode : 'npx create-next-app@latest'
 
@@ -75,11 +76,15 @@ Cette partie retrace les commandes utilisées pour initialiser notre projet :
    ```
 
 4. Une fois notre application buildé on peut lancer notre wampp et se rendre sur 'http://localhost:3000' pour
- vérifier que tout fonctionne
+ vérifier que tout fonctionne.
 
-5. Pour l'installation de Prisma, taper la commande ''
+5. Taper la commande 'npx prisma init' ce qui proposera d'installer et de mettre en place prisma.
 
-6. Se rendre dans le .env nouvellement créé et entrer les informations de connexion à la BDD
+6. Se rendre dans le .env nouvellement créé et entrer les informations de connexion à la BDD.
+
+7. Se rendre dans le fichier ./prisma/shema.prisma et entrer les infos de notre table 'carte'.
+
+8. 'npx prisma migrate dev' permet d'appliquer le schéma de notre carte vers la bdd réelle.
 
 ***
 <!-- Scripts utiles -->

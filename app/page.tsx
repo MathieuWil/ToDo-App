@@ -1,5 +1,9 @@
+import TodoList from "./components/cartes/carteItem";
+
 export default function Home() {
   return (
-<h1>Hello Boss !</h1>
-  );
+    <div>
+        <TodoList />
+      </div>
+    );
 }
