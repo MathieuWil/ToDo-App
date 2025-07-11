@@ -22,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={rubik.className}>
-      <body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={rubik.className}>
         <ThemeProviderClient>
           <Header />
           {children}

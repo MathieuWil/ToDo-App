@@ -1,9 +1,13 @@
-import TodoList from "./components/cartes/carteItem";
+// app/page.tsx
+import TodoList from "./components/cartes/TodoList";
+import CarteForm from "./components/cartes/carteForm";
 
 export default function Home() {
   return (
-    <div>
+    <main className="px-6 py-8">
+      <CarteForm />
       <TodoList />
-    </div>
-    );
+    </main>
+  );
 }
+
