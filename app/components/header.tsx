@@ -3,7 +3,8 @@ import SunMoonButton from './themeButton'
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between px-6 py-4 text-gray-700 dark:text-gray-300 bg-stone-100 dark:bg-stone-900 transition-colors duration-300">
+    <header className="max-w-screen-lg mx-auto flex items-center justify-between px-6 py-4">
+  
   {/* Titre */}
   <Link href="/" className="text-xl font-bold">
     ToDo App!

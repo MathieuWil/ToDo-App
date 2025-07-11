@@ -1,12 +1,16 @@
+'use client';
+
+import Link from 'next/link';
+import { PenLine, Trash } from 'lucide-react';
+
 export default function TodoList() {
   return (
     <>
-      <h1>Hello todolist !</h1>
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
-        <div className="oklch(92.5% 0.084 155.995)">
+        <div className="">
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-          <p className="text-gray-700 text-base">
+          <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
           </p>
         </div>

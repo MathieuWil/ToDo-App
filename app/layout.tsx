@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
+import Footer from "./components/footer";
 import ThemeProviderClient from "./components/ThemeProviderClient";
 
 const rubik = Rubik({
@@ -21,11 +22,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={rubik.className}>
+    <html lang="en" className={rubik.className}>
+      <body>
         <ThemeProviderClient>
           <Header />
           {children}
+          <Footer />
         </ThemeProviderClient>
       </body>
     </html>
