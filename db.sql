@@ -4,7 +4,7 @@ USE todo;
 
 CREATE TABLE carte (
   id INT PRIMARY KEY AUTO_INCREMENT, -- identifiant unique de la carte
-  etat TINYINT NOT NULL DEFAULT 1, -- 1 = active, 0 = archivée
+  etat TINYINT NOT NULL DEFAULT 1, -- 1 = ouverte, 0 = fermée
   titre VARCHAR(255) NOT NULL, -- titre de la carte
   description TEXT, -- description de la carte
   created_at DATETIME DEFAULT CURRENT_TIMESTAMP, -- date de création de la carte

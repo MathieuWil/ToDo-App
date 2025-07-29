@@ -12,7 +12,7 @@ export default function Header() {
 
   {/* Liens + icône */}
   <div className="flex items-center space-x-6">
-    <Link href="/todolist" className="hover:text-gray-500 dark:hover:text-gray-400 transition">
+    <Link href="/" className="hover:text-gray-500 dark:hover:text-gray-400 transition">
       ToDo List
     </Link>
     <Link href="/about" className="hover:text-gray-500 dark:hover:text-gray-400 transition">

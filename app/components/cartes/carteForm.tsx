@@ -28,7 +28,7 @@ export default function CarteForm() {
     try {
       await createCarte(formData);
       form.reset();
-      router.refresh(); // Recharge la page / liste des cartes
+      router.refresh();
     } catch (err) {
       setError('Erreur lors de la création de la carte');
       console.error(err);
@@ -38,10 +38,10 @@ export default function CarteForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex items-end gap-4 py-4">
+    <form onSubmit={handleSubmit} className="flex items-end justify-center gap-4 py-4">
       <div className="flex flex-col">
         <label htmlFor="titre" className="text-sm font-medium">
-          Titre <span className="text-red-500">*</span>
+          Titre *
         </label>
         <input
           id="titre"

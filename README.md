@@ -113,12 +113,12 @@ Cette partie sert à présenter un exemple d'utilisation de notre app :
 <!-- Roadmap -->
 ## Roadmap - Fonctionnalités prévues
 
-- [ ] Ajouter une carte
-- [ ] Modifier une carte
-- [ ] Supprimer une carte
-- [ ] Marquer une carte comme terminée
-- [ ] Filtrer par statut
-- [ ] Stockage en BDD via Prisma
+- [x] Ajouter une carte
+- [x] Modifier une carte
+- [x] Supprimer une carte
+- [x] Marquer une carte comme terminée
+- [x] Filtrer par statut
+- [x] Stockage en BDD via Prisma
 
 ***
 <!-- Bilan du projet -->

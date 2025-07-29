@@ -1,5 +1,6 @@
-'use client';
+"use client";
 
+import { useRouter } from "next/navigation";
 import { Trash, PenLine } from "lucide-react";
 import { deleteCarte } from "@/app/actions/deleteCarte";
 
@@ -14,11 +15,14 @@ interface CarteItemProps {
 }
 
 export default function CarteItem({ carte }: CarteItemProps) {
+  const router = useRouter();
+
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg border border-black dark:border-white">
+    
+    <div className="max-w-sm rounded overflow-hidden border">
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{carte.titre}</div>
-        <p>{carte.description}</p>
+        <p className="break-words whitespace-pre-wrap">{carte.description}</p>
         <div className="text-xs text-gray-500 mt-2">
           Créé le : {new Date(carte.created_at).toLocaleDateString()}
           <br />
@@ -30,18 +34,15 @@ export default function CarteItem({ carte }: CarteItemProps) {
           <input type="hidden" name="id" value={carte.id} />
           <button
             type="submit"
-            className="hover:text-black dark:hover:text-white"
+            className="hover:text-gray-500"
             aria-label="Supprimer"
           >
             <Trash />
           </button>
         </form>
         <button
-          // ici redirection pour édition
-          onClick={() => {
-            window.location.href = `/edit/${carte.id}`;
-          }}
-          className="hover:text-black dark:hover:text-white"
+          onClick={() => router.push(`/edit/${carte.id}`)}
+          className="hover:text-gray-500"
           aria-label="Modifier"
         >
           <PenLine />
