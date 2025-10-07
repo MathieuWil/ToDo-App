@@ -67,7 +67,7 @@ export default async function EditCartePage({ params }: { params: { id: string }
 </div>
 
 
-      <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded">
+      <button type="submit" className="w-full border px-4 py-2 rounded transition">
         Enregistrer
       </button>
     </form>
